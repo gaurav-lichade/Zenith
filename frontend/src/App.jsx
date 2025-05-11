@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./app.css";
+import "./App.css";
 import HomePage from "./pages/Home";
 import Navbar from "./components/Navbar";
 import { Route, Routes, useLocation } from "react-router-dom";
