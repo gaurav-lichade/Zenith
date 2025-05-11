@@ -32,6 +32,12 @@ app.use(
     credentials: true,
   })
 );
+app.use(
+  cors({
+    origin: "https://zenith-bice.vercel.app", // your frontend
+    credentials: true,
+  })
+);
 
 app.get("/", (req, res) => res.send("API is working"));
 app.use("/api/user", userRouter);
