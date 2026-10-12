@@ -26,12 +26,7 @@ app.post("/stripe", express.raw({ type: "application/json" }), stripeWebhooks);
 // middleware configuration
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: "http://localhost:5173", // your frontend
-    credentials: true,
-  })
-);
+
 app.use(
   cors({
     origin: "https://zenith-bice.vercel.app", // your frontend
